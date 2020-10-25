@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".Sign_Up_Activity">
+
+
+    <ImageView
+        android:id="@+id/ImageView_icon_sign_up"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/messenger"
+        android:contentDescription="@string/todo" />
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progress_sign_up"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edeitText_Name_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/edeitText_Email_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/phone_number_or_email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/edeitText_Password_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:importantForAutofill="no" />
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/sign_up"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:textColor="@color/status_text_color"
+        android:enabled="false"
+        android:background="@drawable/btn_background"
+        />
+
+</LinearLayout>
